@@ -13,3 +13,33 @@ Generiamo e stampiamo in console la lista per i segnaposto.
 */
 
 // # Fase di preparazione
+//genero l'array del tavolo dei vip con gli invitati al suo interno
+const vipList = ['Brad Pitt',
+    'Johnny Depp',
+    'Lady Gaga',
+    'Cristiano Ronaldo',
+    'Georgina Rodriguez',
+    'Chiara Ferragni',
+    'George Clooney',
+    'Amal Clooney',
+    'Fedez',
+    'Amadeus',
+    'Fiorello'
+];
+//loggo il tavolo dei vip
+
+//creo un array vuoto in cui andranno inserite le informazioni del tavolo e dei vip
+const vipTable = [];
+
+//per ogni vip...
+vipList.forEach((vip, i) => {
+    //...creo un oggetto con le seguenti chiavi
+    const vipInfo = {
+        tableName: 'Tavolo VIP',
+        vip,
+        place: ++i
+    }
+    //vado ad inserirli nell'array dei vip
+    vipTable.push(vipInfo);
+});
+console.log(vipTable);
