@@ -8,3 +8,65 @@ ES (Marco della Rovere => MARCO DELLA ROVERE);
 */
 
 // # Fase di preparazione
+//creo l'array degli studenti
+const students = [{
+    id: 213,
+    name: 'Marco della Rovere',
+    grades: 78,
+},
+{
+    id: 110,
+    name: 'Paola Cortellessa',
+    grades: 96
+},
+{
+    id: 250,
+    name: 'Andrea Mantegna',
+    grades: 48
+},
+{
+    id: 145,
+    name: 'Gaia Borromini',
+    grades: 74
+},
+{
+    id: 196,
+    name: 'Luigi Grimaldello',
+    grades: 68
+},
+{
+    id: 102,
+    name: 'Piero della Francesca',
+    grades: 50
+},
+{
+    id: 120,
+    name: 'Francesca da Polenta',
+    grades: 84
+}];
+
+console.log(students);
+
+// # Fase di elaborazione
+//creo la nuova aula vuota
+const nameList = [];
+
+//creo le card di tutti gli studenti
+students.forEach(s => {
+    //prendo tutti i nomi e li metto maiuscoli
+    const fullName = s.name.toUpperCase();
+    //li inserisco nella nuova classe
+    nameList.push(fullName);
+});
+//stampo la nuova classe
+console.log(nameList);
+
+//prendo gli studenti che hanno voti superiore al 70
+const plus70 = students.filter(s => (s.grades > 70));
+//stampo la lista degli studenti con voti > 70
+console.log(plus70);
+
+//creo una lista per gli studenti con voti superiore a 70 e id superiore a 120
+
+const plusGradesID = students.filter(s => (s.id > 120 && s.grades > 70));
+console.log('studenti con id + alto', plusGradesID);
