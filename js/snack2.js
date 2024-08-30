@@ -1,4 +1,4 @@
-// ! SNACK 2
+// ! SNACK 2 (29/08/2024)
 /*
 Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
@@ -68,5 +68,6 @@ console.log(plus70);
 
 //creo una lista per gli studenti con voti superiore a 70 e id superiore a 120
 
+//! In questo array al posto di mettere entrambe le condizioni basta girare direttamente sull'array degli studenti con già gli studenti superiori al 70 (plus70);
 const plusGradesID = students.filter(s => (s.id > 120 && s.grades > 70));
 console.log('studenti con id + alto', plusGradesID);

@@ -1,4 +1,4 @@
-// ! SNACK 1
+// ! SNACK 1 (29/08/2024)
 /*
 Dwayne Johnson ci ha chiesto di creare i segnaposto per il tavolo degli invitati alla sua mega festa vip.
 Ci ha lasciato il nome del tavolo ("Tavolo Vip") e la lista degli invitati in ordine di posto:
