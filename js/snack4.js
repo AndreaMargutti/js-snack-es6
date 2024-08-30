@@ -8,3 +8,31 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 */
 
 // # Fase di preparazione
+//creo array per squadre di calcio
+const teams = [
+    {
+        name: 'Modena',
+        score: 0,
+        foul: 0
+    },
+    {
+        name: 'Barcelona',
+        score: 0,
+        foul: 0
+    },
+    {
+        name: 'Varese',
+        score: 0,
+        foul: 0
+    },
+    {
+        name: 'Inter',
+        score: 0,
+        foul: 0
+    },
+    {
+        name: 'Real Madrid',
+        score: 0,
+        foul: 0
+    }
+];
