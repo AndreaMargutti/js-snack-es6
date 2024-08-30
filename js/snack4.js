@@ -45,6 +45,11 @@ teams.forEach((team) => {
     team.score = Math.floor(Math.random() * 50 + 1);
     //genero un numero casuale per i falli
     team.foul = Math.floor(Math.random() * 10 + 1)
-})
+});
 
-console.log(teams);
+//creo un array contente solo i nome e i falli subiti
+const teamsFoul = teams.map(({ name, foul }) => {
+    return `${name} ${foul}`;
+});
+
+console.log(teamsFoul);
