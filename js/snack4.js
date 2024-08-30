@@ -36,3 +36,15 @@ const teams = [
         foul: 0
     }
 ];
+
+console.log(teams);
+
+//per ogni elemento dell'array...
+teams.forEach((team) => {
+    //generiamo un numero da riassegnare a score
+    team.score = Math.floor(Math.random() * 50 + 1);
+    //genero un numero casuale per i falli
+    team.foul = Math.floor(Math.random() * 10 + 1)
+})
+
+console.log(teams);
