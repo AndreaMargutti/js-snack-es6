@@ -27,7 +27,14 @@ const bikes = [
     {
         name: 'Limbus 2000',
         weight: 7
-    },
+    }
 ];
+console.log(bikes);
 
 // TODO: cercare la bici con il peso minore
+
+const bike = bikes.filter(({ weight }, i) => {
+    if (weight <= 3) return true;
+})
+
+console.log(bike);
