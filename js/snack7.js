@@ -35,9 +35,8 @@ console.log(people);
 // # Fase di elaborazione
 //creo un array nuovo
 const driverLicense = people.map(({ name, lastName, age }) => {
-    let string = `${name} ${lastName}, avendo ${age} anni `
     const isCapable = age > 18 ? 'può guidare' : 'non può guidare';
-    return string + isCapable;
+    return `${name} ${lastName}, avendo ${age} anni ${isCapable}`;
 });
 
 console.log(driverLicense);
