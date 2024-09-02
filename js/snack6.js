@@ -43,6 +43,7 @@ const animals = [
 
 console.log(animals);
 
+//# Fase di elaborazione
 //creo l'array di mammiferi filtrando l'array degli animali tramite la chiave 'classe'
 const mammals = animals.filter(animal => { return animal.classe === 'mammiferi' });
 console.log(mammals);
